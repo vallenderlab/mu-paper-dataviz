@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533843451833.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "15DD266F",
+    "lastKnownWriteTime" : 1533851095,
+    "last_content_update" : 1533851095424,
+    "path" : "C:/Users/shutchins2/Desktop/GitRepo/mu-data-viz/barplots.R",
+    "project_path" : "barplots.R",
+    "properties" : {
+        "cursorPosition" : "2,96",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

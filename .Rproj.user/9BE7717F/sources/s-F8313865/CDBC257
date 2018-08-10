@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1533843423111.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CDBC257",
+    "lastKnownWriteTime" : 1533851811,
+    "last_content_update" : 1533851811748,
+    "path" : "C:/Users/shutchins2/Desktop/GitRepo/mu-data-viz/radar.R",
+    "project_path" : "radar.R",
+    "properties" : {
+        "cursorPosition" : "15,20",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
