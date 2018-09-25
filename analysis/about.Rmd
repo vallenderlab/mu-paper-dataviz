@@ -5,4 +5,4 @@ output:
     toc: false
 ---
 
-Describe your project.
+This project is a group of scripts to create better data visualizations for Xiao's OPRM1 manuscript.

@@ -9,10 +9,10 @@ navbar:
       href: about.html
   right:
     - icon: fa-github
-      href: https://github.com/jdblischak/workflowr
+      href: https://github.com/sdhutchins/mu-data-viz
 output:
   workflowr::wflow_html:
     toc: true
     toc_float: true
-    theme: cosmo
+    theme: flatly
     highlight: haddock
