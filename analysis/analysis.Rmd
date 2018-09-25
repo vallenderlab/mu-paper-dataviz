@@ -5,7 +5,7 @@ output:
     toc: false
 ---
 
-```{r warning=FALSE, echo=FALSE}
+```{r warning=FALSE, echo=FALSE, message=FALSE}
 # Barplots of reporter expression
 library(tidyverse)
 library(ggpubr)
