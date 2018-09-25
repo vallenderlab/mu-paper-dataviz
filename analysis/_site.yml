@@ -11,10 +11,10 @@ navbar:
       href: analysis.html
   right:
     - icon: fa-github
-      href: https://github.com/sdhutchins/mu-data-viz
+      href: https://github.com/sdhutchins/mu-paper-dataviz
 output:
   workflowr::wflow_html:
     toc: true
     toc_float: true
-    theme: journal
+    theme: lumen
     highlight: haddock
