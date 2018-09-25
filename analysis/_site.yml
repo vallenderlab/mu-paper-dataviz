@@ -7,6 +7,8 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Analysis"
+      href: analysis.html
   right:
     - icon: fa-github
       href: https://github.com/sdhutchins/mu-data-viz
@@ -14,5 +16,5 @@ output:
   workflowr::wflow_html:
     toc: true
     toc_float: true
-    theme: flatly
+    theme: journal
     highlight: haddock
