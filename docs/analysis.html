@@ -242,12 +242,11 @@ div.section {
 </div>
 
 
-<p><strong>Last updated:</strong> 2018-09-25</p>
+<p><strong>Last updated:</strong> 2018-09-28</p>
 <strong>workflowr checks:</strong> <small>(Click a bullet for more information)</small>
 <ul>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>R Markdown file:</strong> up-to-date </summary></p>
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p><details> <summary> <strong style="color:red;">✖</strong> <strong>R Markdown file:</strong> uncommitted changes </summary> The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </details>
 </li>
 <li>
@@ -266,7 +265,7 @@ div.section {
 </details>
 </li>
 <li>
-<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/sdhutchins/mu-paper-dataviz/tree/d5a2bf7fa9d5f1d503865c03f90eac2cc6e37c4a" target="_blank">d5a2bf7</a> </summary></p>
+<p><details> <summary> <strong style="color:blue;">✔</strong> <strong>Repository version:</strong> <a href="https://github.com/sdhutchins/mu-paper-dataviz/tree/2541f238214b57fb3a6f5819beac6a87da6c9806" target="_blank">2541f23</a> </summary></p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility. The version displayed above was the version of the Git repository at the time these results were generated. <br><br> Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 <pre><code>
 Ignored files:
@@ -277,19 +276,22 @@ Ignored files:
     Ignored:    .Rproj.user/9BE7717F/presentation/
     Ignored:    .Rproj.user/9BE7717F/profiles-cache/
     Ignored:    .Rproj.user/9BE7717F/sources/per/
-    Ignored:    .Rproj.user/9BE7717F/sources/s-EB417AB4/
+    Ignored:    .Rproj.user/9BE7717F/sources/s-6C0A0637/
     Ignored:    .Rproj.user/9BE7717F/viewer-cache/
     Ignored:    .Rproj.user/shared/notebooks/4377CA6B-about/
     Ignored:    .Rproj.user/shared/notebooks/5F7EF42D-index/
     Ignored:    .Rproj.user/shared/notebooks/ABEFF919-analysis/
 
 Untracked files:
-    Untracked:  code/bar2.R
+    Untracked:  output/monkey_metenkephalin.tiff
+    Untracked:  output/monkey_morphine.tiff
 
 Unstaged changes:
+    Modified:   .Rhistory
     Modified:   .Rproj.user/9BE7717F/sources/prop/INDEX
     Modified:   .Rproj.user/shared/notebooks/paths
-    Modified:   data/xiao_mu_jnkvsnfkb.csv
+    Modified:   analysis/analysis.Rmd
+    Modified:   code/delta_log_bars.R
 
 </code></pre>
 Note that any generated files, e.g. HTML, png, CSS, etc., are not included in this status report because it is ok for generated content to have uncommitted changes. </details>
@@ -318,6 +320,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;">
+html
+</td>
+<td style="text-align:left;">
+<a href="https://cdn.rawgit.com/sdhutchins/mu-paper-dataviz/fbd5b515f3dd1859f5a9a52f1349ce467266e205/docs/analysis.html" target="_blank">fbd5b51</a>
+</td>
+<td style="text-align:left;">
+S. Hutchins
+</td>
+<td style="text-align:left;">
+2018-09-25
+</td>
+<td style="text-align:left;">
+Build site.
+</td>
+</tr>
 <tr>
 <td style="text-align:left;">
 html
@@ -391,6 +410,10 @@ Added bar charts
 </ul>
 <p></details></p>
 <hr />
+<div id="generating-bar-plots-for--logka" class="section level1">
+<h1>Generating Bar Plots for Δ logKa</h1>
+<div id="maccaca-mulatta-ligands" class="section level2">
+<h2><em>Maccaca Mulatta</em> + Ligands</h2>
 <p><img src="figure/analysis.Rmd/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 <details> <summary><em>Expand here to see past versions of unnamed-chunk-1-1.png:</em></summary>
 <table style="border-collapse:separate; border-spacing:5px;">
@@ -421,7 +444,8 @@ S. Hutchins
 </tr>
 </tbody>
 </table>
-<p></details></p>
+<p></details> <img src="figure/analysis.Rmd/unnamed-chunk-1-2.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
 <div id="session-information" class="section level2">
 <h2>Session information</h2>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sessionInfo</span>()</code></pre></div>
@@ -442,29 +466,30 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] ggpubr_0.1.8    magrittr_1.5    forcats_0.3.0   stringr_1.3.1  
- [5] dplyr_0.7.6     purrr_0.2.5     readr_1.1.1     tidyr_0.8.1    
- [9] tibble_1.4.2    ggplot2_3.0.0   tidyverse_1.2.1
+ [1] bindrcpp_0.2.2  ggthemes_4.0.1  ggpubr_0.1.8    magrittr_1.5   
+ [5] forcats_0.3.0   stringr_1.3.1   dplyr_0.7.6     purrr_0.2.5    
+ [9] readr_1.1.1     tidyr_0.8.1     tibble_1.4.2    ggplot2_3.0.0  
+[13] tidyverse_1.2.1
 
 loaded via a namespace (and not attached):
  [1] tidyselect_0.2.4  haven_1.1.2       lattice_0.20-35  
  [4] colorspace_1.3-2  htmltools_0.3.6   yaml_2.2.0       
  [7] rlang_0.2.2       R.oo_1.22.0       pillar_1.3.0     
 [10] glue_1.3.0        withr_2.1.2       R.utils_2.7.0    
-[13] modelr_0.1.2      readxl_1.1.0      bindrcpp_0.2.2   
-[16] bindr_0.1.1       plyr_1.8.4        munsell_0.5.0    
-[19] gtable_0.2.0      workflowr_1.1.1   cellranger_1.1.0 
-[22] rvest_0.3.2       R.methodsS3_1.7.1 evaluate_0.11    
-[25] labeling_0.3      knitr_1.20        broom_0.5.0      
-[28] Rcpp_0.12.18      scales_1.0.0      backports_1.1.2  
-[31] jsonlite_1.5      hms_0.4.2         digest_0.6.17    
-[34] stringi_1.2.4     grid_3.5.1        rprojroot_1.3-2  
-[37] cli_1.0.0         tools_3.5.1       lazyeval_0.2.1   
-[40] crayon_1.3.4      whisker_0.3-2     pkgconfig_2.0.2  
-[43] xml2_1.2.0        lubridate_1.7.4   assertthat_0.2.0 
-[46] rmarkdown_1.10    httr_1.3.1        rstudioapi_0.7   
-[49] R6_2.2.2          nlme_3.1-137      git2r_0.23.0     
-[52] compiler_3.5.1   </code></pre>
+[13] modelr_0.1.2      readxl_1.1.0      bindr_0.1.1      
+[16] plyr_1.8.4        munsell_0.5.0     gtable_0.2.0     
+[19] workflowr_1.1.1   cellranger_1.1.0  rvest_0.3.2      
+[22] R.methodsS3_1.7.1 evaluate_0.11     labeling_0.3     
+[25] knitr_1.20        broom_0.5.0       Rcpp_0.12.18     
+[28] scales_1.0.0      backports_1.1.2   jsonlite_1.5     
+[31] hms_0.4.2         digest_0.6.17     stringi_1.2.4    
+[34] grid_3.5.1        rprojroot_1.3-2   cli_1.0.1        
+[37] tools_3.5.1       lazyeval_0.2.1    crayon_1.3.4     
+[40] whisker_0.3-2     pkgconfig_2.0.2   xml2_1.2.0       
+[43] lubridate_1.7.4   assertthat_0.2.0  rmarkdown_1.10   
+[46] httr_1.3.1        rstudioapi_0.7    R6_2.2.2         
+[49] nlme_3.1-137      git2r_0.23.0      compiler_3.5.1   </code></pre>
+</div>
 </div>
 
 <!-- Adjust MathJax settings so that all math formulae are shown using
