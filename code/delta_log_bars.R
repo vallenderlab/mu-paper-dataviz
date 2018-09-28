@@ -27,7 +27,7 @@ ggplot(mmdf, aes(x = X, y = Morphine)) + geom_bar(position = position_dodge(.01)
   ) + ggtitle("Morphine") +
   xlab(NULL) + ylab("Δ logKa") + theme_pubclean()
 
-ggsave("output/monkey_morphine.tiff", device = "tiff")
+ggsave("monkey_morphine.tiff", device = "tiff")
 
 # Monkey Metenkephalin Plot
 ggplot(mmdf, aes(x = mmdf$X, y = mmdf$Met.enkephalin)) + geom_bar(position = position_dodge(.01), width = 0.6, stat = "identity", fill = "green") +
@@ -42,4 +42,4 @@ ggplot(mmdf, aes(x = mmdf$X, y = mmdf$Met.enkephalin)) + geom_bar(position = pos
   ) + ggtitle("Met-enkephalin") +
   xlab(NULL) + ylab("Δ logKa") + theme_pubclean()
 
-ggsave("output/monkey_metenkephalin.tiff", device = "tiff")
+ggsave("monkey_metenkephalin.tiff", device = "tiff")
