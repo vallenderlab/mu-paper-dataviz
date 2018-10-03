@@ -17,11 +17,15 @@ mmdf <- dplyr::filter(df, grepl("Monkey", X))
 mmdf$X <- factor(mmdf$X, levels = c("Monkey cAMP", "Monkey NFkB", "Monkey JNK"))
 
 # Monkey Morphine Plot
-ggplot(mmdf, aes(x = X, y = Morphine)) + geom_bar(position = position_dodge(.01), width = 0.6, stat = "identity", fill = "#0000ff") +
-  geom_errorbar(aes(ymin = Morphine, ymax = Morphine-Morphine.SEM), width = .2, color = "black", size = 1, position = position_dodge(.05)) +
+# Correctly formatted!!!
+ggplot(mmdf, aes(x = X, y = Morphine)) +
+  geom_errorbar(aes(ymin = Morphine, ymax = Morphine-Morphine.SEM), width = .2,
+                color = "#0000ff", position = position_dodge(.9)) +
+  geom_bar(position = position_dodge(), stat = "identity", fill = "#0000ff",
+           colour="#0000ff") +
   scale_x_discrete(labels = c(
     "Monkey cAMP" = "cAMP",
-    "Monkey NFkB" = "NFkB",
+    "Monkey NFkB" = "NF-κB",
     "Monkey JNK" = "JNK"
   )) +
   theme(
@@ -29,23 +33,25 @@ ggplot(mmdf, aes(x = X, y = Morphine)) + geom_bar(position = position_dodge(.01)
     panel.background = element_blank()
   ) + ggtitle("Morphine") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/monkey_morphine.tiff", device = "tiff")
 
 # Monkey Metenkephalin Plot
-ggplot(mmdf, aes(x = mmdf$X, y = mmdf$Met.enkephalin)) + geom_bar(position = position_dodge(.01), width = 0.6, stat = "identity", fill = "#00b0f0") +
-  geom_errorbar(aes(ymin = Met.enkephalin, ymax = Met.enkephalin-Met.enkephalin.SEM), width = .2, color = "black", size = 1, position = position_dodge(.4)) +
+ggplot(mmdf, aes(x = mmdf$X, y = mmdf$Met.enkephalin)) +
+  geom_errorbar(aes(ymin = Met.enkephalin, ymax = Met.enkephalin-Met.enkephalin.SEM), width = .2, color = "#00b0f0", position = position_dodge(.9)) +
+  geom_bar(position = position_dodge(.01), width = 0.6, stat = "identity", fill = "#00b0f0", colour="#00b0f0") +
   scale_x_discrete(labels = c(
-    "Monkey cAMP" = "cAMP", "Monkey JNK" = "JNK",
-    "Monkey NFkB" = "NFkB"
+    "Monkey cAMP" = "cAMP",
+    "Monkey JNK" = "JNK",
+    "Monkey NFkB" = "NF-κB"
   )) +
   theme(
     panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
     panel.background = element_blank()
   ) + ggtitle("Met-enkephalin") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/monkey_metenkephalin.tiff", device = "tiff")
 
@@ -62,7 +68,7 @@ ggplot(mmdf, aes(x = X, y = endomorphin.1)) + geom_bar(position = position_dodge
     panel.background = element_blank()
   ) + ggtitle("Endomorphin-1") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/monkey_endomorphin1.tiff", device = "tiff")
 
@@ -71,14 +77,14 @@ ggplot(mmdf, aes(x = mmdf$X, y = mmdf$b.endorphin)) + geom_bar(position = positi
   geom_errorbar(aes(ymin = b.endorphin, ymax = b.endorphin-b.endorphin.SEM), width = .2, color = "black", size = 1, position = position_dodge(.4)) +
   scale_x_discrete(labels = c(
     "Monkey cAMP" = "cAMP", "Monkey JNK" = "JNK",
-    "Monkey NFkB" = "NFkB"
+    "Monkey NFkB" = "NF-κB"
   )) +
   theme(
     panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
     panel.background = element_blank()
   ) + ggtitle("beta-Endorphin") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/monkey_betaendorphin.tiff", device = "tiff")
 
@@ -87,7 +93,7 @@ ggplot(mmdf, aes(x = X, y = TRV130)) + geom_bar(position = position_dodge(.01), 
   geom_errorbar(aes(ymin = TRV130, ymax = TRV130-TRV130.SEM), width = .2, color = "black", size = 1, position = position_dodge(.05)) +
   scale_x_discrete(labels = c(
     "Monkey cAMP" = "cAMP",
-    "Monkey NFkB" = "NFkB",
+    "Monkey NFkB" = "NF-κB",
     "Monkey JNK" = "JNK"
   )) +
   theme(
@@ -95,7 +101,7 @@ ggplot(mmdf, aes(x = X, y = TRV130)) + geom_bar(position = position_dodge(.01), 
     panel.background = element_blank()
   ) + ggtitle("TRV130") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/monkey_trv130.tiff", device = "tiff")
 
@@ -110,7 +116,7 @@ ggplot(humandf, aes(x = X, y = Morphine)) + geom_bar(position = position_dodge(.
   geom_errorbar(aes(ymin = Morphine, ymax = Morphine-Morphine.SEM), width = .2, color = "black", size = 1, position = position_dodge(.05)) +
   scale_x_discrete(labels = c(
     "Human cAMP" = "cAMP",
-    "Human NFkB" = "NFkB",
+    "Human NFkB" = "NF-κB",
     "Human JNK" = "JNK"
   )) +
   theme(
@@ -118,7 +124,7 @@ ggplot(humandf, aes(x = X, y = Morphine)) + geom_bar(position = position_dodge(.
     panel.background = element_blank()
   ) + ggtitle("Morphine") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/human_morphine.tiff", device = "tiff")
 
@@ -127,7 +133,7 @@ ggplot(humandf, aes(x = mmdf$X, y = humandf$Met.enkephalin)) + geom_bar(position
   geom_errorbar(aes(ymin = Met.enkephalin, ymax = Met.enkephalin-Met.enkephalin.SEM), width = .2, color = "black", size = 1, position = position_dodge(.4)) +
   scale_x_discrete(labels = c(
     "Human cAMP" = "cAMP",
-    "Human NFkB" = "NFkB",
+    "Human NFkB" = "NF-κB",
     "Human JNK" = "JNK"
   )) +
   theme(
@@ -135,7 +141,7 @@ ggplot(humandf, aes(x = mmdf$X, y = humandf$Met.enkephalin)) + geom_bar(position
     panel.background = element_blank()
   ) + ggtitle("Met-enkephalin") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/human_metenkephalin.tiff", device = "tiff")
 
@@ -144,7 +150,7 @@ ggplot(humandf, aes(x = X, y = endomorphin.1)) + geom_bar(position = position_do
   geom_errorbar(aes(ymin = endomorphin.1, ymax = endomorphin.1-endomorphin.1.SEM), width = .2, color = "black", size = 1, position = position_dodge(.05)) +
   scale_x_discrete(labels = c(
     "Human cAMP" = "cAMP",
-    "Human NFkB" = "NFkB",
+    "Human NFkB" = "NF-κB",
     "Human JNK" = "JNK"
   )) +
   theme(
@@ -152,7 +158,7 @@ ggplot(humandf, aes(x = X, y = endomorphin.1)) + geom_bar(position = position_do
     panel.background = element_blank()
   ) + ggtitle("Endomorphin-1") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/human_endomorphin1.tiff", device = "tiff")
 
@@ -161,7 +167,7 @@ ggplot(humandf, aes(x = mmdf$X, y = humandf$b.endorphin)) + geom_bar(position = 
   geom_errorbar(aes(ymin = b.endorphin, ymax = b.endorphin-b.endorphin.SEM), width = .2, color = "black", size = 1, position = position_dodge(.4)) +
   scale_x_discrete(labels = c(
     "Human cAMP" = "cAMP",
-    "Human NFkB" = "NFkB",
+    "Human NFkB" = "NF-κB",
     "Human JNK" = "JNK"
   )) +
   theme(
@@ -169,7 +175,7 @@ ggplot(humandf, aes(x = mmdf$X, y = humandf$b.endorphin)) + geom_bar(position = 
     panel.background = element_blank()
   ) + ggtitle("beta-Endorphin") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/human_betaendorphin.tiff", device = "tiff")
 
@@ -178,7 +184,7 @@ ggplot(humandf, aes(x = X, y = TRV130)) + geom_bar(position = position_dodge(.01
   geom_errorbar(aes(ymin = TRV130, ymax = TRV130-TRV130.SEM), width = .2, color = "black", size = 1, position = position_dodge(.05)) +
   scale_x_discrete(labels = c(
     "Human cAMP" = "cAMP",
-    "Human NFkB" = "NFkB",
+    "Human NFkB" = "NF-κB",
     "Human JNK" = "JNK"
   )) +
   theme(
@@ -186,6 +192,6 @@ ggplot(humandf, aes(x = X, y = TRV130)) + geom_bar(position = position_dodge(.01
     panel.background = element_blank()
   ) + ggtitle("TRV130") +
   xlab(NULL) + ylab("ΔLog(τ/KA)") + theme_pubclean() +
-  scale_y_continuous(breaks=c(-10,-7.5, -5, -2.5, 0, 2.5, 5, 7.5, 10), limits=c(-3, 10))
+  scale_y_continuous(breaks=c(-3,-2, -1, 0, 1, 2, 3), limits=c(-3, 3))
 
 ggsave("figures/human_trv130.tiff", device = "tiff")
