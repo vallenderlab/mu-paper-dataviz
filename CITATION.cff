@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: If you use this repository, please cite the article below.
+title: Associated code for “In Vitro Effects of Ligand Bias on Primate Mu Opioid Receptor Downstream Signaling”
+authors:
+  - family-names: Zhang
+    given-names: Xiao
+  - family-names: Hutchins
+    given-names: Shaurita D.
+  - family-names: Blough
+    given-names: Bruce E.
+  - family-names: Vallender
+    given-names: Eric J.
+preferred-citation:
+  type: article
+  title: In Vitro Effects of Ligand Bias on Primate Mu Opioid Receptor Downstream Signaling
+  authors:
+    - family-names: Zhang
+      given-names: Xiao
+    - family-names: Hutchins
+      given-names: Shaurita D.
+    - family-names: Blough
+      given-names: Bruce E.
+    - family-names: Vallender
+      given-names: Eric J.
+  journal: International Journal of Molecular Sciences
+  volume: "21"
+  issue: "11"
+  pages: "3999"
+  date-published: 2020-06-03
+  doi: 10.3390/ijms21113999
+  url: https://doi.org/10.3390/ijms21113999
