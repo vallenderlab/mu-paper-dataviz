@@ -5,16 +5,16 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
     - text: "Analysis"
       href: analysis.html
+    - text: "About"
+      href: about.html
   right:
     - icon: fa-github
-      href: https://github.com/sdhutchins/mu-paper-dataviz
+      href: https://github.com/vallenderlab/mu-paper-dataviz
 output:
   workflowr::wflow_html:
     toc: true
     toc_float: true
-    theme: lumen
+    theme: sandstone
     highlight: haddock
