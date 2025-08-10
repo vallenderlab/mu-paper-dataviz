@@ -4,18 +4,11 @@ Data visualization and analysis for the mu opioid receptor biased agonism study 
 
 ## Site
 
-📊 **View the Data Visualizations**: [vallenderlab.github.io/mu-paper-dataviz/](https://vallenderlab.github.io/mu-paper-dataviz/)
+**View the Data Visualizations**: [vallenderlab.github.io/mu-paper-dataviz/](https://vallenderlab.github.io/mu-paper-dataviz/)
 
 ## About
 
 This repository contains code and data visualizations for the publication "In Vitro Effects of Ligand Bias on Primate Mu Opioid Receptor Downstream Signaling" (Zhang et al., 2020). The research characterizes MOR ligand bias in rhesus macaques, comparing signaling bias patterns across different agonists and validating the translational utility of nonhuman primate models.
-
-## Key Visualizations
-
-- Log delta bar charts for each ligand by species
-- Radar charts with consistent color schemes
-- Concentration-response curves for cAMP, NF-ĸB, and MAPK/JNK pathways
-- Species comparison analyses
 
 ## Citation
 
