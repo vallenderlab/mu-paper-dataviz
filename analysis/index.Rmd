@@ -6,4 +6,21 @@ output:
     toc: false
 ---
 
-Welcome to the mupaper dataviz site.
+## Abstract
+
+Interest has emerged in biased agonists at the mu opioid receptor (MOR) as a possible means for maintaining potent analgesia with reduced side effect profiles. While approaches measuring in vitro biased agonism are used in the development of these compounds, their therapeutic utility will ultimately be determined by in vivo functional effects. Nonhuman primates (NHPs) are the most translational model for evaluating the behavioral effects of candidate medications, but biased signaling of these drugs at NHP MOR receptors has been unstudied.
+
+The goal of the current work was to characterize MOR ligand bias in rhesus macaques, focusing on agonists that have previously been reported to show different patterns of biased agonism in rodents and humans. Downstream signaling pathways that responded to MOR activation were identified using a luciferase reporter array. Concentration-response curves for specific pathways (cAMP, NF-ĸB, MAPK/JNK) were generated using six agonists previously reported to differ in terms of signaling bias at rodent and human MORs.
+
+Using DAMGO as a reference ligand, relative cAMP, NF-ĸB and MAPK/JNK signaling by morphine, endomorphin-1, and TRV130 were found to be comparable between species. Further, the bias patterns across ligands for NF-ĸB and MAPK/JNK were largely similar between species. There was a high degree of concordance between rhesus macaque and human MOR receptor signaling bias for all agonists tested, further demonstrating their utility for future translational behavioral studies.
+
+## About This Site
+
+This site contains data visualizations and analysis related to the mu opioid receptor biased agonism study in rhesus macaques. The research focuses on characterizing signaling bias patterns across different agonists and comparing these patterns between species to validate the translational utility of nonhuman primate models.
+
+## Key Findings
+
+- **Species Comparison**: High concordance between rhesus macaque and human MOR receptor signaling bias
+- **Pathways Studied**: cAMP, NF-ĸB, and MAPK/JNK signaling pathways
+- **Agonists Tested**: DAMGO (reference), morphine, endomorphin-1, TRV130, and others
+- **Translational Utility**: Validates rhesus macaques as a model for future behavioral studies

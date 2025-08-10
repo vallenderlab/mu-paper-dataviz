@@ -5,4 +5,32 @@ output:
     toc: false
 ---
 
-This project is a group of scripts to create better data visualizations for Xiao's OPRM1 manuscript.
+## Principal Investigator
+
+**Eric J. Vallender, PhD**  
+Associate Professor, Department of Psychiatry and Human Behavior  
+University of Mississippi Medical Center  
+[Faculty Profile](https://umc.edu/som/Departments%20and%20Offices/SOM%20Departments/Psychiatry-and-Human-Behavior/Faculty/Faculty%20Profiles/Eric-J-Vallender-PhD.html)
+
+Dr. Vallender's research focuses on comparative genomics of neuropsychiatric disease, molecular evolution of the brain, and substance abuse functional genetics. His work includes characterizing the effects of genetic variation on ligand binding and intracellular signaling of the mu-opioid receptor.
+
+## Research Team
+
+This project involves data visualizations and analysis for research on mu opioid receptor biased agonism in rhesus macaques. The study was conducted by a collaborative team including:
+
+- **Xiao Zhang** - First author and primary researcher
+- **Shaurita D. Hutchins** - 2nd author
+- **Bruce E. Blough** - Co-author  
+- **Eric J. Vallender** - Principal Investigator and senior author
+
+## Publication
+
+**Title**: "In Vitro Effects of Ligand Bias on Primate Mu Opioid Receptor Downstream Signaling"  
+**Journal**: International Journal of Molecular Sciences  
+**Volume**: 21, Issue 11, Pages 3999  
+**Date Published**: June 3, 2020  
+**DOI**: [10.3390/ijms21113999](https://doi.org/10.3390/ijms21113999)
+
+## Project Description
+
+This project contains scripts and data visualizations for the OPRM1 manuscript focusing on characterizing MOR ligand bias in rhesus macaques. The research compares signaling bias patterns across different agonists and validates the translational utility of nonhuman primate models for opioid receptor studies.
