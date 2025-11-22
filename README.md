@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/144216906.svg)](https://doi.org/10.5281/zenodo.17677009)
+
 # mu-paper-dataviz
 
 Data visualization and analysis for the mu opioid receptor biased agonism study in rhesus macaques.
